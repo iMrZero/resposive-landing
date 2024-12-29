@@ -1,0 +1,113 @@
+@use "../gloable-rules/variables" as *;
+@use "../gloable-rules/mixin" as *;
+
+/* ==== TESTIMONIAL ==== */
+.testimonial {
+  --main-clr: #{$primaryColor};
+  .testimonial__heading {
+    @include section-head;
+    .testimonial__text {
+      margin-inline: auto;
+    }
+  }
+  .testimonail__wrapper {
+    margin-top: nth($fontSize, 8);
+    gap: 4rem;
+    @media (min-width: 47em) {
+      grid-template-columns: repeat(2, minmax(450px, 1fr));
+    }
+    .testimonail__clients__list {
+      .client__info {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: nth($fontSize, 7);
+        .client__name {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          transition: 0.3s;
+          &.active {
+            color: $primaryColor;
+          }
+        }
+        .client__dep {
+          flex: 1;
+          display: block;
+          margin-right: auto;
+        }
+        .icon {
+          width: 14px;
+          aspect-ratio: 1;
+          &.acive {
+            color: $primaryColor;
+          }
+        }
+      }
+      @media (max-width: 47em) {
+        .client__info {
+          text-align: center;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 0.5rem;
+          .client__dep {
+            margin: auto;
+          }
+        }
+      }
+    }
+    .testomonail__clients__comment {
+      position: relative;
+      .comment__cards {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        .comment__card {
+          max-width: fit-content;
+          background-color: $primaryColor;
+          background-image: url("./assets/images/client-bg.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          padding: nth($fontSize, 8) nth($fontSize, 4);
+          border-radius: 3rem;
+          .card__text {
+            color: $white;
+            line-height: 1.7;
+            margin-block: 2rem;
+            max-width: 25rem;
+            text-align: center;
+          }
+        }
+        .comment__image {
+          gap: nth($fontSize, 6);
+          margin-top: nth($fontSize, 6);
+          .image__client {
+            width: 170px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 100vw;
+          }
+          .image__client__dep {
+            font-size: nth($fontSize, 1);
+            color: $gray;
+          }
+          @media (max-width: 47em) {
+            & {
+              flex-direction: column;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .active {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

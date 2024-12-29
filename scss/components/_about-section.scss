@@ -1,0 +1,77 @@
+@use "../gloable-rules/variables" as *;
+@use "../gloable-rules/mixin" as *;
+/* ====ABOUT SECTION==== */
+.about {
+  .about__wrapper {
+    @media (min-width: 47em) {
+      grid-template-columns: repeat(2, minmax(350px, 1fr));
+    }
+    .about__content {
+      & > * {
+        margin-block: nth($fontSize, 3);
+      }
+      .about__title {
+        @media (min-width: 47em) {
+          &::before,
+          &::after {
+            left: 20px;
+          }
+          &::after {
+            margin-left: nth($fontSize, 7);
+          }
+        }
+      }
+      .about__text {
+        max-width: 37.5rem;
+        line-height: 1.7;
+        color: $gray;
+      }
+      .about__content__box {
+        gap: nth($fontSize, 4);
+        @media (min-width: 47em) {
+          grid-template-columns: repeat(2, minmax(150px, 1fr));
+        }
+        .content__box {
+          background-color: $white;
+          padding: 0.8rem nth($fontSize, 4);
+          border-radius: 100vw;
+          box-shadow: 0px 0px 16px 1px rgba($black, $alpha: 0.1);
+          .box__title {
+            transition: 0.3s;
+          }
+          .box__text {
+            color: $gray;
+          }
+          &:hover .box__title {
+            color: $primaryColor;
+          }
+        }
+      }
+      & .about__button {
+        @include gardient-button;
+        width: fit-content;
+      }
+      @media (max-width: 47em) {
+        text-align: center;
+      }
+    }
+    .about__image {
+      @media (min-width: 47em) {
+        position: relative;
+        &::before {
+          content: "";
+          background-image: url(./assets/images/about-bg.jpg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          top: -10vw;
+          right: 0;
+          width: 140%;
+          aspect-ratio: 1;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

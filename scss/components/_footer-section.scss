@@ -1,0 +1,112 @@
+@use "../gloable-rules/variables" as *;
+@use "../gloable-rules/mixin" as *;
+
+/* ===== FOOTER SECTION ====== */
+.footer {
+  min-height: 100vh;
+  background-image: url("./assets/images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 1.5rem;
+  @media (min-width: 47em) {
+    padding-top: 18.75rem;
+  }
+  @media (max-width: 47em) {
+    background-color: $black;
+  }
+  .footer__head {
+    @include section-head;
+    max-width: 37.5rem;
+    .footer__head__title {
+      color: $white;
+      text-transform: capitalize;
+      margin-bottom: 2.5rem;
+      @media (max-width: 47em) {
+        font-size: 1.5rem;
+      }
+    }
+    .footer__head__form {
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .email__input {
+        background-color: transparent;
+        color: $white;
+        border: 0;
+        outline: 0;
+        padding: 0.5rem;
+        border-bottom: 1px solid $white;
+        &::placeholder {
+          color: inherit;
+        }
+      }
+      .form__button {
+        padding-inline: 2rem;
+        border: 1px solid $white;
+        color: $white;
+        transition: 0.3s;
+        &:hover {
+          background-color: $primaryColor;
+        }
+      }
+      @media (max-width: 47em) {
+        flex-direction: column;
+      }
+    }
+  }
+  & > *:not(:last-child) {
+    // border: 1px solid red;
+    margin-bottom: 3.5rem;
+  }
+  .footer__wrapper {
+    row-gap: 1rem;
+    .footer__column {
+      .column__title {
+        color: $white;
+      }
+      .column__content {
+        color: $white;
+        & > * {
+          margin-block: 1rem;
+        }
+        & a {
+          text-decoration: none;
+          color: inherit;
+          transition: 0.3s;
+          &:hover {
+            color: #ffffffa1;
+          }
+        }
+        @media (max-width: 47em) {
+          .footer__logo {
+            margin-inline: auto;
+          }
+        }
+      }
+    }
+    @media (min-width: 47em) {
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+      gap: 0.5rem;
+    }
+  }
+  .copyright {
+    width: 100%;
+    max-width: 35rem;
+    margin-inline: auto;
+    color: $white;
+    text-align: center;
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  @media (max-width: 47em) {
+    text-align: center;
+  }
+}
+/* some addtion */
+.even-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}

@@ -1,0 +1,13 @@
+@use "./scss/gloable-rules/rest";
+@use "./scss/gloable-rules/variables" as var;
+@use "./scss/gloable-rules/uitilites";
+// COMPONENTS
+@use "./scss/components/header";
+@use "./scss/components/hero-section";
+@use "./scss/components/services-section";
+@use "./scss/components/about-section";
+@use "./scss/components/testimonail-section";
+@use "./scss/components/pricing-section";
+@use "./scss/components/footer-section";
+// import font google
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");

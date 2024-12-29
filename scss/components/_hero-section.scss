@@ -1,0 +1,53 @@
+@use "../gloable-rules/variables" as *;
+/* ====HERO SECTION==== */
+.section {
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url("./assets/images/slider-left-dec.png");
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    position: absolute;
+    inset: -85px 0 0 0;
+    width: 95%;
+    height: 110%;
+    z-index: -1;
+  }
+  @media (max-width: 47em) {
+    &::after {
+      display: none;
+    }
+  }
+  .hero__wrapper {
+    min-height: 100vh;
+    .hero__content {
+      max-width: 37.5rem;
+      & > * {
+        margin-block-end: nth($fontSize, 4);
+      }
+      .button {
+        column-gap: nth($fontSize, 4);
+        .button__quota {
+          max-width: fit-content;
+          background-color: $primaryColor;
+          color: $white;
+        }
+      }
+    }
+  }
+  @media (max-width: 47em) {
+    .hero__wrapper {
+      flex-direction: column;
+      text-align: center;
+      .hero__title {
+        margin-top: calc(nth($fontSize, 8) * 2);
+      }
+      .hero__text {
+        color: $gray;
+      }
+      .button {
+        justify-content: center;
+      }
+    }
+  }
+}

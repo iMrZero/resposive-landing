@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chain App</title>
+  </head>
+  <body>
+    <!-- HEADER AREA -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper | flex align-center padding-block-300">
+          <div class="header__logo">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </div>
+          <nav class="nav header__nav">
+            <ul class="nav__list | flex fw-400" id="nav-list">
+              <li class="nav__link">
+                <a href="#home" class="active" id="toggle-active">Home</a>
+              </li>
+              <li class="nav__link"><a href="#service">Services</a></li>
+              <li class="nav__link"><a href="#about">About</a></li>
+              <li class="nav__link"><a href="#pricing">Pricing</a></li>
+              <li class="nav__link"><a href="#footer">Newsletter</a></li>
+              <div class="button">
+                <button class="button__sign__in | flex align-center">
+                  <img src="./assets/images/login.svg" />
+                  sign in now
+                </button>
+              </div>
+            </ul>
+          </nav>
+          <div class="menu menu__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              class="icon"
+              id="show-list"
+            >
+              <path
+                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              class="icon"
+              id="hide-list"
+            >
+              <path
+                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN AREA -->
+    <main class="main">
+      <section class="section" id="home">
+        <div class="container">
+          <div class="hero__wrapper | flex flex-center">
+            <div class="hero__content">
+              <h1 class="hero__title | fw-700 fs-800">
+                Get The Latest App <br />
+                From App Stores
+              </h1>
+              <p class="hero__text">
+                Chain App Dev is an app landing page HTML5 template based on
+                Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great
+                website to download free CSS templates.
+              </p>
+              <div class="hero__buttons">
+                <div class="button | flex">
+                  <button class="button__quota | fw-500">Free Quota</button>
+                  <button class="button__quota | fw-500">Free Quota</button>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img
+                src="./assets/images/slider-dec.png"
+                alt="slider description"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES AREA -->
+      <section class="services | margin-block-800-2" id="service">
+        <div class="services__heading">
+          <h1 class="services__title | heading fs-600">
+            Amazing <span>Services & Features </span>for you
+          </h1>
+          <p class="services__text">
+            If you need the greatest collection of HTML templates for your
+            business, please visit TooCSS Blog. If you need to have a contact
+            form PHP script, go to our contact page for more information.
+          </p>
+        </div>
+        <div class="container">
+          <div class="services__wrapper | grid margin-block-700-2">
+            <div class="services__content">
+              <img
+                src="./assets/images/service-icon-01.png"
+                class="services__content__image"
+              />
+              <h3 class="services__content__title">App Maintenance</h3>
+              <p class="services__content__text | fs-100">
+                You are not allowed to redistribute this template ZIP file on
+                any other website.
+              </p>
+              <button class="services__content__button">
+                <a href="#" class="button__read__more">Read More</a>
+              </button>
+            </div>
+            <div class="services__content">
+              <img
+                src="./assets/images/service-icon-02.png"
+                class="services__content__image"
+              />
+              <h3 class="services__content__title">Rocket Speed of App</h3>
+              <p class="services__content__text | fs-100">
+                You are allowed to use the Chain App Dev HTML template. Feel
+                free to modify or edit this layout.
+              </p>
+              <button class="services__content__button">
+                <a href="#" class="button__read__more">Read More</a>
+              </button>
+            </div>
+            <div class="services__content">
+              <img
+                src="./assets/images/service-icon-03.png"
+                class="services__content__image"
+              />
+              <h3 class="services__content__title">Multi Workflow Idea</h3>
+              <p class="services__content__text | fs-100">
+                If this template is beneficial for your work, please support us
+                a little via PayPal. Thank you.
+              </p>
+              <button class="services__content__button">
+                <a href="#" class="button__read__more">Read More</a>
+              </button>
+            </div>
+            <div class="services__content">
+              <img
+                src="./assets/images/service-icon-04.png"
+                class="services__content__image"
+              />
+              <h3 class="services__content__title">24/7 Help & Support</h3>
+              <p class="services__content__text | fs-100">
+                Lorem ipsum dolor consectetur adipiscing elit sedder
+                williamsburg photo booth quinoa and fashion axe.
+              </p>
+              <button class="services__content__button">
+                <a href="#" class="button__read__more">Read More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT AREA -->
+      <section class="about | margin-block-800-2" id="about">
+        <div class="container">
+          <div class="about__wrapper | grid">
+            <div class="about__content">
+              <h1 class="about__title | heading fs-500">
+                About <span>What We Do </span>& Who We Are
+              </h1>
+              <p class="about__text | fs-100">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eismod tempor incididunt ut labore et dolore magna.
+              </p>
+              <div class="about__content__box | grid">
+                <div class="content__box">
+                  <h3 class="box__title">Maintance Problems</h3>
+                  <p class="box__text | fs-100">Lorem Ipsum Tex</p>
+                </div>
+                <div class="content__box">
+                  <h3 class="box__title">24/7 Support & Help</h3>
+                  <p class="box__text | fs-100">Lorem Ipsum Tex</p>
+                </div>
+                <div class="content__box">
+                  <h3 class="box__title">Fixing Issues About</h3>
+                  <p class="box__text | fs-100">Lorem Ipsum Tex</p>
+                </div>
+                <div class="content__box">
+                  <h3 class="box__title">Co. Development</h3>
+                  <p class="box__text | fs-100">Lorem Ipsum Tex</p>
+                </div>
+              </div>
+              <p class="about__text | fs-100">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eismod tempor idunte ut labore et dolore adipiscing magna
+              </p>
+              <div class="button">
+                <button class="about__button">Start 14-Day Free Trail</button>
+              </div>
+            </div>
+            <div class="about__image">
+              <img
+                src="./assets/images/about-right-dec.png"
+                alt="about image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS AREA -->
+      <section class="testimonial | margin-block-800-2" id="testimonials">
+        <div class="testimonial__heading">
+          <h1 class="testimonial__title | heading fs-600">
+            Check What <span>The Clients Say</span> About Our App Dev
+          </h1>
+          <p class="testimonial__text | mx-width-600 fs-100 text-gray">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eismod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="container">
+          <div class="testimonail__wrapper | grid">
+            <ul class="testimonail__clients__list">
+              <li class="client__info">
+                <span class="client__name | fs-300 fw-500"
+                  >David Martino Co
+                  <span class="client__date | fs-100 text-gray"
+                    >30 November 2021</span
+                  >
+                </span>
+                <span class="client__dep | fw-500 text-gray"
+                  >Financial Apps</span
+                >
+                <div class="star-icons | flex">
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="client__info">
+                <span class="client__name | fs-300 fw-500"
+                  >Jake Harris Nyo
+                  <span class="client__date | fs-100 text-gray"
+                    >29 November 2021</span
+                  >
+                </span>
+                <span class="client__dep | fw-500 text-gray"
+                  >Web Development</span
+                >
+                <div class="star-icons | flex">
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="client__info">
+                <span class="client__name | fs-300 fw-500"
+                  >May Catherina
+                  <span class="client__date | fs-100 text-gray"
+                    >27 November 2021</span
+                  >
+                </span>
+                <span class="client__dep | fw-500 text-gray"
+                  >Digital Business</span
+                >
+                <div class="star-icons | flex">
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="client__info">
+                <span class="client__name | fs-300 fw-500"
+                  >Random User
+                  <span class="client__date | fs-100 text-gray"
+                    >24 November 2021
+                  </span>
+                </span>
+                <span class="client__dep | fw-500 text-gray"
+                  >Business & Economics</span
+                >
+                <div class="star-icons | flex">
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="client__info">
+                <span class="client__name | fs-300 fw-500"
+                  >Mark Amber Do
+                  <span class="client__date | fs-100 text-gray"
+                    >21 November 2021</span
+                  >
+                </span>
+                <span class="client__dep | fw-500 text-gray"
+                  >New App Ecosystem</span
+                >
+                <div class="star-icons | flex">
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use href="./icons.svg#star"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+            <div class="testomonail__clients__comment">
+              <div class="comment__cards active">
+                <div class="comment__card">
+                  <img src="./assets/images/quote.png" />
+                  <p class="card__text">
+                    “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                    do eismod tempor idunte ut labore et dolore magna aliqua
+                    darwin kengan lorem ipsum dolor sit amet, consectetur picing
+                    elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="comment__image | flex align-center">
+                  <img
+                    class="image__client"
+                    src="./assets/images/1.jpg"
+                    alt="client image"
+                  />
+                  <div class="image__info">
+                    <h3 class="image__client__title">David Martino</h3>
+                    <span class="image__client__dep"
+                      >CEO of David Company
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment__cards">
+                <div class="comment__card">
+                  <img src="./assets/images/quote.png" />
+                  <p class="card__text">
+                    “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                    do eismod tempor idunte ut labore et dolore magna aliqua
+                    darwin kengan lorem ipsum dolor sit amet, consectetur picing
+                    elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="comment__image | flex align-center">
+                  <img
+                    class="image__client"
+                    src="./assets/images/2.jpg"
+                    alt="client image"
+                  />
+                  <div class="image__info">
+                    <h3 class="image__client__title">Jake Harris Nyo</h3>
+                    <span class="image__client__dep"
+                      >CTO of Digital Company</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="comment__cards">
+                <div class="comment__card">
+                  <img src="./assets/images/quote.png" />
+                  <p class="card__text">
+                    “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                    do eismod tempor idunte ut labore et dolore magna aliqua
+                    darwin kengan lorem ipsum dolor sit amet, consectetur picing
+                    elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="comment__image | flex align-center">
+                  <img
+                    class="image__client"
+                    src="./assets/images/client-image.jpg"
+                    alt="client image"
+                  />
+                  <div class="image__info">
+                    <h3 class="image__client__title">May Catherina</h3>
+                    <span class="image__client__dep"
+                      >Founder of Catherina Co.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="comment__cards">
+                <div class="comment__card">
+                  <img src="./assets/images/quote.png" />
+                  <p class="card__text">
+                    “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                    do eismod tempor idunte ut labore et dolore magna aliqua
+                    darwin kengan lorem ipsum dolor sit amet, consectetur picing
+                    elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="comment__image | flex align-center">
+                  <img
+                    class="image__client"
+                    src="./assets/images/3.jpg"
+                    alt="client image"
+                  />
+                  <div class="image__info">
+                    <h3 class="image__client__title">Random Staff</h3>
+                    <span class="image__client__dep"
+                      >Manager, Digital Company
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div Mark Amber Do class="comment__cards">
+                <div class="comment__card">
+                  <img src="./assets/images/quote.png" />
+                  <p class="card__text">
+                    “Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed
+                    do eismod tempor idunte ut labore et dolore magna aliqua
+                    darwin kengan lorem ipsum dolor sit amet, consectetur picing
+                    elit massive big blasta.”
+                  </p>
+                </div>
+                <div class="comment__image | flex align-center">
+                  <img
+                    class="image__client"
+                    src="./assets/images/2.jpg"
+                    alt="client image"
+                  />
+                  <div class="image__info">
+                    <h3 class="image__client__title">Mark Amber Do</h3>
+                    <span class="image__client__dep"
+                      >CTO, Amber Do Company
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRICING -->
+      <section class="pricing | margin-block-800-2" id="pricing">
+        <div class="price__heading">
+          <h1 class="price__title | heading fs-600">
+            We Have The Best Pre-Order <span>Prices</span> You Can Get
+          </h1>
+          <p class="price__text | mx-width-600 fs-100 text-gray">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eismod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+        <div class="container">
+          <div class="price__warpper | grid">
+            <div class="price__plan">
+              <div class="plan__header">
+                <span class="amout | fs-600 fw-600">$12</span>
+                <h3 class="plan__header__title">Standard Plan App</h3>
+                <img
+                  class="plan__header__image"
+                  src="./assets/images/pricing-table-01.png"
+                />
+              </div>
+              <ul class="plan__list">
+                <li class="plan__list__title | fs-100">Lorem Ipsum Dolores</li>
+                <li class="plan__list__title | fs-100">20 TB of Storage</li>
+                <li class="plan__list__title | fs-100 line-through">
+                  Life-time Support
+                </li>
+                <li class="plan__list__title | fs-100 line-through">
+                  Premium Add-Ons
+                </li>
+                <li class="plan__list__title | fs-100 line-through">
+                  Fastest Network
+                </li>
+                <li class="plan__list__title | fs-100 line-through">
+                  More Options
+                </li>
+              </ul>
+              <div class="button">
+                <button class="plan__button | fw-500">
+                  Purchase This Plan Now
+                </button>
+              </div>
+            </div>
+            <div class="price__plan | pro">
+              <div class="plan__header">
+                <span class="amout | fs-600 fw-600">$25</span>
+                <h3 class="plan__header__title">Business Plan App</h3>
+                <img
+                  class="plan__header__image"
+                  src="./assets/images/pricing-table-01.png"
+                />
+              </div>
+              <ul class="plan__list">
+                <li class="plan__list__title | fs-100">Lorem Ipsum Dolores</li>
+                <li class="plan__list__title | fs-100">120 TB of Storage</li>
+                <li class="plan__list__title | fs-100">Life-time Support</li>
+                <li class="plan__list__title | fs-100">Premium Add-Ons</li>
+                <li class="plan__list__title | fs-100 line-through">
+                  Fastest Network
+                </li>
+                <li class="plan__list__title | fs-100 line-through">
+                  More Options
+                </li>
+              </ul>
+              <div class="button">
+                <button class="plan__button | fw-500">
+                  Purchase This Plan Now
+                </button>
+              </div>
+            </div>
+            <div class="price__plan">
+              <div class="plan__header">
+                <span class="amout | fs-600 fw-600">$66</span>
+                <h3 class="plan__header__title">Premium Plan App</h3>
+                <img
+                  class="plan__header__image"
+                  src="./assets/images/pricing-table-01.png"
+                />
+              </div>
+              <ul class="plan__list">
+                <li class="plan__list__title | fs-100">Lorem Ipsum Dolores</li>
+                <li class="plan__list__title | fs-100">50 TB of Storage</li>
+                <li class="plan__list__title | fs-100">Life-time Support</li>
+                <li class="plan__list__title | fs-100">Premium Add-Ons</li>
+                <li class="plan__list__title | fs-100">Fastest Network</li>
+                <li class="plan__list__title | fs-100">More Options</li>
+              </ul>
+              <div class="button">
+                <button class="plan__button | fw-500">
+                  Purchase This Plan Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER AREA -->
+    <footer class="footer" id="footer">
+      <section class="footer__head">
+        <h1 class="footer__head__title | fs-600 fw-900">
+          Join our mailing list to receive the news & latest trends
+        </h1>
+        <form class="footer__head__form | flex">
+          <input
+            type="email"
+            class="email__input"
+            placeholder="Email Address..."
+          />
+          <div class="button">
+            <button class="form__button">Subscribe Now</button>
+          </div>
+        </form>
+      </section>
+      <div class="container">
+        <div class="footer__wrapper | grid">
+          <div class="footer__column">
+            <h3 class="column__title">Contact Us</h3>
+            <div class="column__content">
+              <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
+              <p>010-020-0340</p>
+              <a href="#">info@company.co</a>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="column__title">About Us</h3>
+            <div class="column__content">
+              <ul class="nav__list">
+                <li class="link__list"><a href="#">Home</a></li>
+                <li class="link__list"><a href="#">Services</a></li>
+                <li class="link__list"><a href="#">About</a></li>
+                <li class="link__list"><a href="#">Testimonials</a></li>
+                <li class="link__list"><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="column__title">Useful Links</h3>
+            <div class="column__content">
+              <ul class="nav__list | even-column">
+                <li class="link__list"><a href="#">Free Apps</a></li>
+                <li class="link__list"><a href="#">App Engine</a></li>
+                <li class="link__list"><a href="#">Programming</a></li>
+                <li class="link__list"><a href="#">Development</a></li>
+                <li class="link__list"><a href="#">App News</a></li>
+                <li class="link__list"><a href="#">App Dev Team</a></li>
+                <li class="link__list"><a href="#">Digital Web</a></li>
+                <li class="link__list"><a href="#">Normal Apps</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="column__title">About Our Company</h3>
+            <div class="column__content">
+              <img src="./assets/images/white-logo.png" class="footer__logo" />
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright | fs-100 fw-300">
+        <p class="copyright__text">
+          Copyright © <span id="copyright-date">2024</span> Chain App Dev
+          Company. All Rights Reserved.
+        </p>
+        <p>
+          Design:
+          <a href="https://templatemo.com/" target="_blank">TemplateMo</a>
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

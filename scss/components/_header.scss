@@ -1,0 +1,65 @@
+@use "../gloable-rules/variables" as *;
+@use "../gloable-rules/mixin" as *;
+/* ===HEADER=== */
+.header {
+  min-height: 80px;
+  box-shadow: 0px 2px 6px 2px rgba($gray, $alpha: 0.1);
+  .header__wrapper {
+    justify-content: space-between;
+    .nav__list {
+      align-items: center;
+      column-gap: nth($fontSize, 5);
+      .nav__link {
+        a {
+          color: $black;
+          text-decoration: none;
+          transition: 0.3s;
+          &.active,
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+      .button__sign__in {
+        @include gardient-button;
+      }
+      @media (max-width: 47em) {
+        & {
+          background-color: $bgNav;
+          position: fixed;
+          right: 0;
+          top: 82px;
+          width: 100%;
+          flex-direction: column;
+          row-gap: nth($fontSize, 2);
+          margin-block-start: calc(nth($fontSize, 2) / 2);
+          padding: nth($fontSize, 2) 0;
+          opacity: 0;
+          visibility: hidden;
+          transition: 0.3s;
+          z-index: 9;
+          & .nav__link:not(:last-child) {
+            width: 100%;
+            text-align: center;
+            padding-bottom: nth($fontSize, 1);
+            border-bottom: 1px solid rgba($gray, 0.3);
+          }
+        }
+      }
+    }
+    .menu__icon {
+      display: none;
+      .icon {
+        width: 32px;
+        aspect-ratio: 1;
+        fill: #000;
+        cursor: pointer;
+      }
+      @media (max-width: 47em) {
+        & {
+          display: block;
+        }
+      }
+    }
+  }
+}

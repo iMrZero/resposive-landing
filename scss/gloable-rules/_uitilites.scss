@@ -1,0 +1,94 @@
+@use "./variables" as *;
+.container {
+  width: 100%;
+  margin-inline: auto;
+  @media (min-width: 47em) {
+    max-width: 1110px;
+    padding-inline: nth($fontSize, 3);
+  }
+  @media (max-width: 47em) {
+    max-width: 640px;
+    padding-inline: nth($fontSize, 1);
+  }
+}
+.heading {
+  padding-bottom: nth($fontSize, 3);
+  margin-bottom: nth($fontSize, 3);
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 2rem;
+    height: 2px;
+    background-color: $primaryColor;
+  }
+  &::after {
+    left: 50%;
+    margin-left: 0.5rem;
+  }
+  &::before {
+    right: 50%;
+  }
+  & span {
+    color: $primaryColor;
+  }
+}
+.button button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem nth($fontSize, 3);
+  border-radius: 100vw;
+}
+/* ===COLOR=== */
+.text-gray {
+  color: $gray;
+}
+/* ===FONT WEIGHT=== */
+@each $weight in $fontWeight {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}
+/* ====FONT SIZE===*/
+$count: 100;
+@each $size in $fontSize {
+  .fs-#{$count} {
+    font-size: $size;
+  }
+  $count: $count + 100;
+}
+/* ===DISPLAY=== */
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+// .even-column {
+//   columns: 2;
+// }
+/* ===PADDING & MARGIN==== */
+.margin-block-700-2 {
+  margin-block: calc(nth($fontSize, 7) * 2);
+}
+.margin-block-800-2 {
+  margin-block: calc(nth($fontSize, 8) * 2);
+}
+.padding-block-300 {
+  padding-block: nth($fontSize, 3);
+}
+.mx-width-600 {
+  max-width: 37.5rem;
+}

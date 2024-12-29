@@ -1,0 +1,19 @@
+@use "./variables" as *;
+@mixin gardient-button {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: $white;
+  background-color: $primaryColor;
+  background: linear-gradient(
+    108deg,
+    $secondaryColor 0%,
+    rgba(40, 225, 253, 1) 100%
+  );
+}
+@mixin section-head {
+  width: 100%;
+  // max-width: 37.5rem;
+  margin-inline: auto;
+  text-align: center;
+  position: relative;
+}
